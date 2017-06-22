@@ -11,7 +11,3 @@ Multi-arch `/bin/true`.
 ```
 make
 ```
-
-## References
-
-*   [Multi-arch Docker Images](http://container-solutions.com/multi-arch-docker-images/)

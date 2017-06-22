@@ -1,8 +1,8 @@
-.PHONY: images
+.PHONY: publish images build dockerfiles
 IMAGE_NAME:=zambon/true
 
 publish: build dockerfiles images
-	manifest-tool push from-spec true.yaml
+	manifest-tool push from-spec true-multi.yaml
 
 images:
 	cd build/linux/amd64 && docker build -t $(IMAGE_NAME):amd64 .
