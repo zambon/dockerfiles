@@ -1,6 +1,6 @@
 # true
 
-Multiarch /bin/true.
+Multi-arch `/bin/true`.
 
 ## Preqrequisites
 
