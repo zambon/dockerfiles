@@ -1,9 +1,10 @@
 # Dockerfiles
 
-| Image                                     | Description                     |
-| ----------------------------------------- | ------------------------------- |
-| [hello-world-multi](true-multi/README.md) | Multi-arch `hello-world` image. |
-| [true-multi](true-multi/README.md)        | Multi-arch `/bin/true`.         |
+| Image                                            | Description                     |
+| ------------------------------------------------ | ------------------------------- |
+| [busybox-multi](busybox-multi/README.md)         | Multi-arch `busybox` image.     |
+| [hello-world-multi](hello-world-multi/README.md) | Multi-arch `hello-world` image. |
+| [true-multi](true-multi/README.md)               | Multi-arch `/bin/true`.         |
 
 ## License
 

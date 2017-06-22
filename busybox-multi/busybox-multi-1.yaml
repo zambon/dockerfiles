@@ -1,0 +1,10 @@
+image: zambon/busybox-multi:1
+manifests:
+  - image: busybox:1
+    platform:
+      architecture: amd64
+      os: linux
+  - image: ppc64le/busybox:1
+    platform:
+      architecture: ppc64le
+      os: linux
