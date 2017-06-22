@@ -1,0 +1,10 @@
+image: zambon/true-multi:latest
+manifests:
+  - image: zambon/true:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: zambon/true:ppc64le
+    platform:
+      architecture: ppc64le
+      os: linux
