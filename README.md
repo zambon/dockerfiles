@@ -1,8 +1,8 @@
 # Dockerfiles
 
-| Image                              | Description           |
-| ---------------------------------- | --------------------- |
-| [true-multi](true-multi/README.md) | Multi-arch `bin/true` |
+| Image                              | Description            |
+| ---------------------------------- | ---------------------- |
+| [true-multi](true-multi/README.md) | Multi-arch `/bin/true` |
 
 ## License
 
