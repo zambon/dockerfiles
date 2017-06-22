@@ -1,4 +1,4 @@
-# true
+# hello-world-multi
 
 Multi-arch `hello-world` image.
 

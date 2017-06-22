@@ -2,7 +2,7 @@
 IMAGE_NAME:=zambon/true
 
 publish: build dockerfiles images
-	manifest-tool push from-spec true-multi.yaml
+	manifest-tool push from-spec true-multi-latest.yaml
 
 images:
 	cd build/linux/amd64 && docker build -t $(IMAGE_NAME):amd64 .
@@ -10,7 +10,7 @@ images:
 	cd build/linux/ppc64le && docker build -t $(IMAGE_NAME):ppc64le .
 	docker push $(IMAGE_NAME):ppc64le
 	@echo "Image\t\t\tDigest"
-	@docker image ls --digests --format "{{.Repository}}:{{.Tag}}\t{{.Digest}}" | grep "$(IMAGE_NAME)"
+	@docker image ls --digests --format "{{.Repository}}:{{.Tag}}\t{{.Digest}}" $(IMAGE_NAME)
 	docker image prune -f
 
 build: \
