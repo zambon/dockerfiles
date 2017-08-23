@@ -1,0 +1,15 @@
+image: zambon/ubuntu-multi:16.04
+manifests:
+  - image: ubuntu:16.04
+    platform:
+      architecture: amd64
+      os: linux
+  - image: ppc64le/ubuntu:16.04
+    platform:
+      architecture: ppc64le
+      os: linux
+  - image: arm32v7/ubuntu:16.04
+    platform:
+      architecture: arm
+      variant: v7l
+      os: linux
