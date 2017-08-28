@@ -1,0 +1,15 @@
+image: zambon/golang-multi:1.8.3
+manifests:
+  - image: golang:1.8.3
+    platform:
+      architecture: amd64
+      os: linux
+  - image: ppc64le/golang:1.8.3
+    platform:
+      architecture: ppc64le
+      os: linux
+  - image: arm32v7/golang:1.8.3
+    platform:
+      architecture: arm
+      variant: v7l
+      os: linux
