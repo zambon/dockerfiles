@@ -2,7 +2,12 @@
 IMAGE_NAME:=zambon/true
 
 publish: build dockerfiles images
-	manifest-tool push from-spec true-multi-latest.yaml
+	@for MANIFEST in *.y*ml; do \
+		manifest-tool \
+			--username "${DOCKER_USERNAME}" \
+			--password "${DOCKER_PASSWORD}" \
+			push from-spec $$MANIFEST; \
+	done
 
 images:
 	cd build/linux/amd64 && docker build -t $(IMAGE_NAME):amd64 .

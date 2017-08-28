@@ -1,5 +1,9 @@
 .PHONY: publish
 
 publish:
-	manifest-tool push from-spec busybox-multi-latest.yaml
-	manifest-tool push from-spec busybox-multi-1.yaml
+	@for MANIFEST in *.y*ml; do \
+		manifest-tool \
+			--username "${DOCKER_USERNAME}" \
+			--password "${DOCKER_PASSWORD}" \
+			push from-spec $$MANIFEST; \
+	done
